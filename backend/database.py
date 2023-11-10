@@ -10,8 +10,8 @@ class Item(BaseModel):
     rest_name: str
     # tax: float | None = None
 
-
-client = motor.motor_asyncio.AsyncIOMotorClient('mongodb://localhost:27017/')
+# 'mongodb://localhost:27017/'
+client = motor.motor_asyncio.AsyncIOMotorClient("mongodb+srv://sid:foodship@cluster0.ud5q6jm.mongodb.net/")
 database = client.foodship
 # collection = database["MelodyHotel"]
 
