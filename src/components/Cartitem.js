@@ -6,7 +6,7 @@ import Box from "@mui/material/Box";
 
 function Cartitem(props){
     const deleteCartitem=(item_id)=>{
-        axios.delete(`http://127.0.0.1:8000/${item_id}`)
+        axios.delete(`https://foodship.onrender.com/${item_id}`)
             .then(res=>console.log(res.data))
     }
 

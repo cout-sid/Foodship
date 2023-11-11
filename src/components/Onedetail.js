@@ -32,7 +32,7 @@ import Typography from '@mui/material/Typography';
 function Onedetail(props){
     
     const addCartitem = () => {
-        axios.post("http://127.0.0.1:8000/post", { "price": props.data.price, "quantity": props.data.quantity,
+        axios.post("https://foodship.onrender.com/post", { "price": props.data.price, "quantity": props.data.quantity,
          "item_id": props.data.item_id, 'item_name':props.data.item_name,"rest_name":props.data.rest_name})
           .then(res => console.log(res))
     }

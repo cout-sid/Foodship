@@ -27,7 +27,7 @@ function App() {
   const [cart, setCart] = useState([{}])
 
   useEffect(() => {
-    axios.get('http://127.0.0.1:8000/displaymylist')
+    axios.get('https://foodship.onrender.com/displaymylist')
       .then(res => {
         // console.log(res.data)
         setCart(res.data)
@@ -112,7 +112,6 @@ function App() {
         </Box>
           
           
-          
 
           <div className="mycart">
             <Box sx={{ width: 300 ,height : '100%',bgcolor:"#c7af6b",p: 0, m: 0}}>
@@ -127,7 +126,6 @@ function App() {
         
       </Box>
 
-      
             {/* style={{ display: 'none' }} */}
 
     </div>

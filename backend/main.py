@@ -7,6 +7,7 @@ app=FastAPI()
 
 origins = [
     "http://localhost:3000",
+    # "https://foodship.onrender.com",
 ]
 
 app.add_middleware(
