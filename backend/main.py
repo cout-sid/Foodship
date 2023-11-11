@@ -6,8 +6,9 @@ from database import post_item,remove_item,sample,all_order,Item
 app=FastAPI()
 
 origins = [
-    "http://localhost:3000",
+    # "http://localhost:3000",
     # "https://foodship.onrender.com",
+    "https://foodship-frontend.onrender.com",
 ]
 
 app.add_middleware(
